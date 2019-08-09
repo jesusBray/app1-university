@@ -2,7 +2,7 @@
   "name": "db",
   "connector": "postgresql",
   "url": "",
-  "host": "localhost",
+  "host": "pruevauno_pgdb-buses_1",
   "port": 5432,
   "user": "postgres",
   "password": "root",

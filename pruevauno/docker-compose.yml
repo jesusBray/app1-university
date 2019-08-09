@@ -1,0 +1,16 @@
+version: "3"
+services:
+  pgdb-buses:
+    restart: always
+    build: ./pgdb
+    environment:
+        POSTGRES_PASSWORD: root
+    ports:
+    - "5433:5432"
+  lb4-api-buses:
+    restart: always
+    build: ./lb-4-pg
+    ports:
+    - "3003:3000"
+    links:
+      - pgdb-buses
