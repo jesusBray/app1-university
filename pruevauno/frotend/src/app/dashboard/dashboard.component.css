@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.toolbar-children{
+    width: 20%;
+    background: rgb(138, 107, 107);    
+}
+
+.tabla {
+    width : 40%;
+}
+
+.image-buss{
+    width: 40%;
+    background: rgb(155, 69, 69);
+}
