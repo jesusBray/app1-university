@@ -16,3 +16,16 @@
     width: 40%;
     background: rgb(155, 69, 69);
 }
+
+.margin-colum{
+    padding-right: 18px
+}
+  
+.mat-form-field {
+font-size: 14px;
+width: 100%;
+}
+
+table {
+    width: 100%;
+}
