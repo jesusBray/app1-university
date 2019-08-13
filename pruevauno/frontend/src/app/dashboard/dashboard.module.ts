@@ -11,6 +11,7 @@ import { CdkTableModule} from '@angular/cdk/table';
 
 import { MatTableModule } from '@angular/material';
 import { MatButtonModule } from '@angular/material/button';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -36,7 +37,8 @@ import { DashboardService } from "./dashboard.service";
     CdkTableModule,
     MatButtonModule,
     HttpClientModule,
-    MatInputModule
+    MatInputModule,
+    MatGridListModule
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })

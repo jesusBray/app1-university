@@ -1,5 +1,8 @@
 <mat-toolbar>
-        <button mat-button>Menu</button>
+    <button mat-button>Menu</button>
+    <i class="material-icons">
+        perm_identity
+    </i>
 </mat-toolbar>
 
 <div class="container">
@@ -7,11 +10,29 @@
         
     </div>
     <div class="image-buss">
-        
+        <mat-grid-list cols="2" rowHeight="2:1">
+            <tr *ngFor="let policy of totalPassenger">
+                <mat-grid-tile class="colum">
+                    <div class="user-name">
+                        {{policy.pasajero_data.nombre}}
+                    </div>
+                    <div *ngIf="show; else elseIcon">
+                        <i class="material-icons md-36">
+                            stars
+                        </i>
+                    </div>
+                    <ng-template #elseIcon>
+                        <i class="material-icons md-36">
+                            cancel
+                        </i>
+                    </ng-template>
+                </mat-grid-tile>
+            </tr>
+        </mat-grid-list>
     </div>
     <div class="tabla">
-        <mat-form-field mat-core-theme>
-            <input matInput (keyup)="getPasseger($event.target.value)" placeholder="Filter Passenger" >
+        <mat-form-field mat-core-theme >
+            <input matInput (keyup)="getPasseger($event.target.value)" placeholder="Search for name" >
         </mat-form-field>
 
         <table mat-table [dataSource]="dataSource" >

@@ -29,3 +29,28 @@ width: 100%;
 table {
     width: 100%;
 }
+
+.user-name{
+
+}
+mat-form-field{
+    padding: 2%;
+}
+
+.material-icons{
+    margin-left: 90%;
+}
+
+mat-grid-tile {
+    background: lightblue;
+}
+
+.colum{
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+}
+.material-icons.md-36 { 
+    font-size: 48px;
+    margin: 0;
+}
